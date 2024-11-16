@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicar</title>
+    <!--script renderiza antes do html.
+    Depois, só colocar o caminho correto do arquivo quando for deixar na estrutura padrão do projeto-->
+</head>
+<body>
+    <main>
+        <div class="container-publicar">
+            <p id="user">publicando como: </p>
+          <form action="/livraria/send" method="post" id="pub">
+            <div class="capa-livro">
+                <input type="file" id="capa" name="capa" id="capa"  accept="image/*">
+                <img src="https://placehold.co/400x640" alt="Image preview..." id="previow-imagem"> 
+            </div>
+            <div class="info-livro-publicar">
+                <input type="text" placeholder="Nome do Livro" id="titulo" name="titulo">
+                <input type="text" placeholder="Editora" id="editora" name="editora">
+                <input type="text" placeholder="Genero" id="genero" name="genero">
+                <input type="number" placeholder="Classificação Indicativa" id="classificacaoIndicativa" name="classificacaoIndicativa">
+                <input type="text" placeholder="Idioma" id="idioma" name="idioma">
+                <input type="number" placeholder="Número de Páginas" id="numeroPaginas" name="numeroPaginas">
+                <textarea placeholder="Sinopse" cols="30" rows="10" id="sinopse" name="sinopse"></textarea>
+                <input type="number" min="1" step="any" placeholder="Preço" id="preco" name="preco">
+                <input type="submit" value="Publicar">
+            </div>
+        </form>
+        
+        </main>
+        <script src="/views/send.js"></script>
+</body>
+</html>

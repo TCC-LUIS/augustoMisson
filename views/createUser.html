@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/livraria/createUser" method="POST" id="pub">
+      <input type="text" name="nome" id="nome" placeholder="insira seu nome" />
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="insira seu email"
+      />
+      <input
+        type="text"
+        name="senha"
+        id="senha"
+        placeholder="insira sua senha"
+      />
+      <input
+        type="text"
+        name="descrição"
+        id="descricao"
+        placeholder="insira uma breve descrição (opicional)"
+      />
+      <input
+        type="text"
+        name="livro_favorito"
+        id="livrof"
+        placeholder="qual o seu livro favorito?"
+      />
+      <input type="file" name="file" id="file" />
+      <input type="submit" value="registrar" />
+    </form>
+    <script src="createUser.js"></script>
+  </body>
+</html>
